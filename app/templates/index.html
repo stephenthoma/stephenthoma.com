@@ -1,0 +1,151 @@
+
+<html>
+    <head>
+        <title>Stephen Thoma</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="static/css/simplegrid.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,100,400' rel='stylesheet' type='text/css'>
+
+        <!--[if gte IE 9]>
+        <style type="text/css">
+            .gradient {
+                filter: none;
+            }
+        </style>
+        <![endif]-->
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="static/js/lib/hoverintent.js"></script>
+        <script src="static/js/lib/jquery.hashchange.min.js"></script>
+        <script src="static/js/lib/waypoints.min.js"></script>
+        <script src="static/js/lib/md5.min.js"></script>
+
+        <script src="static/js/gravatar_adapter.js"></script>
+        <script src="static/js/animate_header.js"></script>
+        <script src="static/js/calc_age.js"></script>
+        <script src="static/js/project_text_reveal.js"></script>
+
+    </head>
+    <body>
+        <div class="header header-large" data-animate-up="header-large" data-animate-down="header-small">
+            <div class="grid grid-pad">
+                <div class="header-content">
+                    <div class="col-1-1">
+                        <div>
+                            <h1><strong>Hello!</strong></h1>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div>
+                            <img class="gravatar"/>
+                        </div>
+                    </div>
+                    <div class="col-5-12">
+                        <div class="header-blob">
+                            <p>My name is Stephen Thoma. I am a <span id="age_display"></span> year old student at the University of Colorado: Boulder. Computer Science major, photographer, and outdoors enthusiast.</p>
+                        </div>
+                        <div>
+                            <h2>STEPHEN THOMA</h2>
+                        </div>
+                    </div>
+                    <nav class="cl-effect-1">
+                        <div class="col-6-12 header-nav">
+                            <a href="http://www.airworxcinema.com">Photos</a>
+                            <a href="http://www.github.com/sthoma">Github</a>
+                            <a href="mailto:stephen@airworxcinema.com">Contact</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-pad">
+            <div class="grid grid-pad">
+                <div class="col-1-1">
+                    <div class="story">
+                        <div class="columns">
+                            <div class="project">
+                                <a href="http://www.baeg.uark.edu/4465.php" target="_newtab">
+                                    <img src="static/img/arcgis.jpg" />
+                                    <p class="hide">
+                                       Performed modeling of the impact of the Deep Water Horizon oil spill on coastal ecosystem services. This work was done through a research experience for undergraduates (REU) at the University of Arkansas. Click for more information.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a href="https://github.com/sthoma/dairyalloc" target="_newtab">
+                                    <img src="static/img/doitlive.png" />
+                                    <p class="hide">
+                                       A browser app intended to be run locally that interfaces with FUSE and the Dropbox api in an effort to allow users to easily store files on the Dropbox servers without having local copies. Click to view source code on Github.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a href="https://github.com/sthoma/dairyalloc" target="_newtab">
+                                    <img src="static/img/dairyalloc.png" />
+                                    <p class="hide">
+                                      The dairy allocation calculator is a web app that will be used by dairy farmers to calculate their product level life cycle allocation (A metric for environmental impact). The work was completed for the University of Arkansas. Click to view source code on Github.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a href="https://github.com/sthoma/dijkstra_cpp" target="_newtab">
+                                    <img src="static/img/graph.png" />
+                                    <p class="hide">
+                                       A C++ implementation of dijkstra's single source shortest pathfinding algorithm. Click to view source code on Github.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <img src="static/img/memes.png" />
+                                <p class="hide">
+                                    This was an open source web app intended to allow users to create memes (web comics). We approached the app with a goal of not using any backend servers but quickly ran into roadblocks when attempting to implement community voting.
+                                </p>
+                            </div>
+                            <div class="project">
+                                <img src="static/img/boids.jpg" />
+                                <p class="hide">
+                                    This is an implementation of the Boids artificial life program. The program was made to be used as an interactive design element in a web page.
+                                </p>
+                            </div>
+                            <div class="project">
+                                <a href="http://www.airworxcinema.com" target="_newtab">
+                                    <img src="static/img/cablecam.jpg" />
+                                    <p class="hide">
+                                        Partner at Airworx Cinema, an Aerial cinematography company that operates in cooperation with Louder Than Eleven to produce promotional content and live broadcasts. Click to visit our webpage.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <img src="static/img/castegaming.png" />
+                                <p class="hide">
+                                    Co-Founder of CasteGaming, an online hosting platform and community for fans of multiplayer voxel-based games.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-1">
+                    <div class="story-foot">
+                        <div class="foot-content">
+                            <p>Made with <a href="https://github.com/ThisIsDallas/Simple-Grid" title="Simple Grid">tender</a> <a href="http://os.alfajango.com/easytabs" title="EasyTabs">loving</a> <a href="http://glyphicons.com/" title="Glyphicons">care</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50781774-1', 'stephenthoma.com');
+  ga('send', 'pageview');
+
+</script>
