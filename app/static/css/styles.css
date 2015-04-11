@@ -1,3 +1,4 @@
+/* ---- SECTION: GENERAL ---- */
 body {
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
@@ -31,6 +32,7 @@ p {
 
 .hide {display: none;}
 
+/* ---- SECTION: HEADER ---- */
 .header {
   position: fixed;
   top: 0;
@@ -78,13 +80,6 @@ p {
   margin-left: -13px;
 }
 
-.gravatar {
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  margin-top: 28%;
-  width: 90%;
-}
-
 .header-nav {
   padding-left: 12%;
   padding-top: 39px;
@@ -93,6 +88,15 @@ p {
 .header-nav a {
   padding: 15px;
 }
+
+.gravatar {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 28%;
+  width: 90%;
+}
+
+/* ---- SECTION: PROJECTS ---- */
 
 .story {
   margin-top: 200px;
@@ -165,6 +169,7 @@ p {
   padding: 0;
 }
 
+/* ---- SECTION: FOOTER ---- */
 .story-foot {
   /* background: rgba(69, 184, 172, 1.0); */
   height: 40px;
@@ -180,49 +185,6 @@ p {
   padding-right: 20px;
   color: #555;
   font-size: 14px;
-}
-
-/* Tympanus text styling for links: https://github.com/codrops/CreativeLinkEffects/ */
-.cl-effect-1 a::before,
-.cl-effect-1 a::after {
-        display: inline-block;
-        opacity: 0;
-        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-        -o-transition: -o-transition 0.3s, opacity 0.2s;
-        transition: transform 0.3s, opacity 0.2s;
-}
-
-.cl-effect-1 a::before {
-        margin-right: 10px;
-        content: '[';
-        -webkit-transform: translateX(20px);
-        -moz-transform: translateX(20px);
-        -o-transform: translateX(20px);
-        -ms-transform: translateX(20px);
-        transform: translateX(20px);
-}
-
-.cl-effect-1 a::after {
-        margin-left: 10px;
-        content: ']';
-        -webkit-transform: translateX(-20px);
-        -moz-transform: translateX(-20px);
-        -o-transform: translateX(-20px);
-        -ms-transform: translateX(-20px);
-        transform: translateX(-20px);
-}
-
-.cl-effect-1 a:hover::before,
-.cl-effect-1 a:hover::after,
-.cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
-        opacity: 1;
-        -webkit-transform: translateX(0px);
-        -moz-transform: translateX(0px);
-        -o-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        transform: translateX(0px);
 }
 
 @media only screen and (max-device-width : 760px) {
