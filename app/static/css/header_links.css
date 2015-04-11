@@ -10,7 +10,7 @@
 }
 
 .cl-effect-1 a::before {
-  margin-right: 10px;
+  margin-right: 8px;
   content: '[';
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
@@ -20,7 +20,7 @@
 }
 
 .cl-effect-1 a::after {
-  margin-left: 10px;
+  margin-left: 8px;
   content: ']';
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
