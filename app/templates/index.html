@@ -65,72 +65,16 @@
                 <div class="col-1-1">
                     <div class="story">
                         <div class="columns">
-                            <div class="project">
-                                <a href="http://www.baeg.uark.edu/4465.php" target="_newtab">
-                                    <img src="static/img/arcgis.jpg" />
-                                    <p class="hide">
-                                       Performed modeling of the impact of the Deep Water Horizon oil spill on coastal ecosystem services. This work was done through a research experience for undergraduates (REU) at the University of Arkansas. Click for more information.
-                                    </p>
+                            {% for project in projects %}
+                              <div class="project">
+                                <a href="{{ project.url }}" target="_newtab">
+                                  <img src="{{ project.image_url }}" />
+                                  <p class="hide">
+                                    {{ project.description }}
+                                  </p>
                                 </a>
-                            </div>
-                            <div class="project">
-                              <a href="https://www.devcoded.com" target="_newtab">
-                                <img src="static/img/devcoded.png" />
-                                <p class="hide">
-                                  A marketplace for developers of video game plugins to be matched with clients that want custom enhancements to be created for them. This is a new sideproject that is still under development. Click to visit the site.
-                                </p>
-                              </a>
-                            </div>
-                            <div class="project">
-                                <a href="https://github.com/sthoma/doitlive" target="_newtab">
-                                    <img src="static/img/doitlive.png" />
-                                    <p class="hide">
-                                       A browser app intended to be run locally that interfaces with FUSE and the Dropbox api in an effort to allow users to easily store files on the Dropbox servers without having local copies. Click to view source code on Github.
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="project">
-                                <a href="https://github.com/sthoma/dairyalloc" target="_newtab">
-                                    <img src="static/img/dairyalloc.png" />
-                                    <p class="hide">
-                                      The dairy allocation calculator is a web app that will be used by dairy farmers to calculate their product level life cycle allocation (A metric for environmental impact). The work was completed for the University of Arkansas. Click to view source code on Github.
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="project">
-                                <a href="https://github.com/sthoma/dijkstra_cpp" target="_newtab">
-                                    <img src="static/img/graph.png" />
-                                    <p class="hide">
-                                       A C++ implementation of dijkstra's single source shortest pathfinding algorithm. Click to view source code on Github.
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="project">
-                                <img src="static/img/memes.png" />
-                                <p class="hide">
-                                    This was an open source web app intended to allow users to create memes (web comics). We approached the app with a goal of not using any backend servers but quickly ran into roadblocks when attempting to implement community voting.
-                                </p>
-                            </div>
-                            <div class="project">
-                                <img src="static/img/boids.jpg" />
-                                <p class="hide">
-                                    This is an implementation of the Boids artificial life program. The program was made to be used as an interactive design element in a web page.
-                                </p>
-                            </div>
-                            <div class="project">
-                                <a href="http://www.airworxcinema.com" target="_newtab">
-                                    <img src="static/img/cablecam.jpg" />
-                                    <p class="hide">
-                                        Partner at Airworx Cinema, an Aerial cinematography company that operates in cooperation with Louder Than Eleven to produce promotional content and live broadcasts. Click to visit our webpage.
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="project">
-                                <img src="static/img/castegaming.png" />
-                                <p class="hide">
-                                    Co-Founder of CasteGaming, an online hosting platform and community for fans of multiplayer voxel-based games.
-                                </p>
-                            </div>
+                              </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
