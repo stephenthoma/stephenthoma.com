@@ -2,7 +2,7 @@ $(document).ready(function() {
     var $head = $('.header');
     animClassDown = $head.data('animateDown');
     animClassUp = $head.data('animateUp' );
-    if( $('.gravatar').css('display') !== 'none') {
+    if( $('.story').css('margin-top') !== '70px') {
         $('.story').waypoint( function( direction ) {
             if( direction === 'down' && animClassDown ) {
                 $head.attr('class', 'header ' + animClassDown);
