@@ -5,6 +5,6 @@ def read_projects(data_path):
     if os.path.isfile(data_path):
         with open(data_path) as data_file:
             projects = json.load(data_file)
-        return projects
+        return projects['projects']
     else:
         return {}
