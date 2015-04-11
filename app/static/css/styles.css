@@ -29,6 +29,10 @@ p {
   line-height: 24px;
 }
 
+ul {
+  list-style: none;
+}
+
 .hide {display: none;}
 
 /* ---- SECTION: HEADER ---- */
@@ -40,7 +44,7 @@ p {
   z-index: 50;
   overflow: hidden;
 
-  background-color: #DD4124;
+  background-color: rgba(119, 204, 164, 0.98);
   color: #f6f6f6;
 
   -webkit-box-shadow: 0 2px 9px #888;
