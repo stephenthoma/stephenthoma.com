@@ -63,18 +63,25 @@
     <div class="grid grid-pad">
       <div class="col-1-1">
         <div class="story">
-          <div class="columns">
-            {% for project in projects %}
-              <div class="project">
-                <a href="{{ project.url }}" target="_newtab">
-                  <img src="{{ project.image_url }}" />
-                </a>
-
-                <p class="hide">
-                  {{ project.description }}
-                </p>
-              </div>
-            {% endfor %}
+          <div class="flexbox">
+            <ul class="flex-card-list">
+              {% for project in projects %}
+                <li class="flex-card-listitem">
+                  <div class="flex-card">
+                    <div class="flex-card-image">
+                      <img src="{{ project.image_url }}" />
+                    </div>
+                    <div class="flex-card-content">
+                      <p>
+                        <span class="flex-card-heading">Project name</span>
+                        {{ project.description }}
+                        <a href="{{ project.url }}" class="flex-card-button">VIEW</a>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
       </div>
