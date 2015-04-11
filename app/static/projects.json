@@ -1,46 +1,55 @@
 {
   "projects": [
     {
+      "name": "Deepwater GIS",
       "url": "http://www.baeg.uark.edu/4465.php",
       "image_url": "static/img/arcgis.jpg",
       "description": "Performed modeling of the impact of the Deep Water Horizon oil spill on coastl ecosystem services. This work was done through a research experience for undergraduates (REU) at the University of Arkansas"
     },
     {
+      "name": "DevCoded",
       "url": "https://www.devcoded.com",
       "image_url": "static/img/devcoded.png",
       "description": "A marketplace for developers of video game plugins to be matched with clients desiring custom enhancements. This is a sideproject that is still under development"
     },
     {
+      "name": "DoItLive",
       "url": "https://github.com/sthoma/doitlive",
       "image_url": "static/img/doitlive.png",
       "description": "A browser app intended to be run locally to interface with Dropbox API in an effort to allow users to easily store files on the Dropbox servers without having local copies."
     },
     {
+      "name": "Dairy Calculator",
       "url": "https://github.com/sthoma/dairyalloc",
       "image_url": "static/img/dairyalloc.png",
       "description": "The dairy allocation calculator is a web app that will be used by dairy farmers to calculate their product level life cycle allocation (A metric for environmental impact). The work was completed for the University of Arkansas"
     },
     {
+      "name": "Dijkstra",
       "url": "https://github.com/sthoma/dijkstra_cpp",
       "image_url": "static/img/graph.png",
       "description": "A C++ implementation of dijkstra's single source shortest pathfinding algorithm."
     },
     {
+      "name": "9001 Memes",
       "url": "",
       "image_url": "static/img/memes.png",
       "description": "This was an open source web app intended to allow users to create memes (web comics). We approached the project with the goal of using no backend servers, but quickly ran into roadblacks with implementing community voting"
     },
     {
+      "name": "Boids",
       "url": "",
       "image_url": "static/img/boids.jpg",
       "description": "An implementation of the Boids artificial life program. The program was made to be used as an interactive design element in a web page."
     },
     {
+      "name": "Airworx Cinema",
       "url": "http://www.airworxcinema.com",
       "image_url": "static/img/cablecam.jpg",
       "description": "Co-founder of Airworx Cinema, an aerial cinematography company that produces promotional content and live broadcasts"
     },
     {
+      "name": "CasteGaming",
       "url": "",
       "image_url": "static/img/castegaming.png",
       "description": "Co-founder of CasteGaming, the first online hosting platform and community for fans of multiplayer voxel-based games"
