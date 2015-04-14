@@ -51,7 +51,7 @@
         </div>
 
         <div class="col-4-12 push-2-12 mobile-col-1-1 header-nav cl-effect-1">
-          <a href="http://www.airworxcinema.com">Photo</a>
+          <a href="http://www.instagram.com/stephenthoma">Photo</a>
           <a href="http://www.github.com/sthoma">Github</a>
           <a href="mailto:stephen@airworxcinema.com">Contact</a>
         </div>
@@ -75,7 +75,13 @@
                       <p>
                         <span class="flex-card-heading">{{ project.name }}</span>
                         {{ project.description }}
-                        <a href="{{ project.url }}" class="flex-card-button">VIEW</a>
+                        <a href="{{ project.url }}" class="flex-card-button">
+                          {% if project.url|length == 0 %}
+                            <!-- No link -->
+                          {% else %}
+                            VIEW
+                          {% endif %}
+                        </a>
                       </p>
                     </div>
                   </div>
