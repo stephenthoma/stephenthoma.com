@@ -1,8 +1,9 @@
-<html>
+<html lang="en">
 <head>
   <title>Stephen Thoma</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A catalogue of my recent and noteworthy projects" />
+  <meta property="og:title" content="Stephen Thoma's projects" />
   <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
   <link rel="stylesheet" type="text/css" href="static/css/header_links.css" />
   <link rel="stylesheet" type="text/css" href="static/css/simplegrid.css" />
@@ -60,19 +61,17 @@
                 <li class="flex-card-listitem">
                   <div class="flex-card">
                     <div class="flex-card-image">
-                      <img src="{{ project.image_url }}" />
+                      <img alt="A snapshot of the project" src="{{ project.image_url }}" />
                     </div>
                     <div class="flex-card-content">
                       <p>
                         <span class="flex-card-heading">{{ project.name }}</span>
                         {{ project.description }}
-                        <a href="{{ project.url }}" class="flex-card-button">
-                          {% if project.url|length == 0 %}
-                            <!-- No link -->
-                          {% else %}
-                            VIEW
-                          {% endif %}
-                        </a>
+                        {% if project.url|length != 0 %}
+                          <a href="{{ project.url }}" class="flex-card-button">VIEW</a>
+                        {% else %}
+                          <!-- No link -->
+                        {% endif %}
                       </p>
                     </div>
                   </div>
