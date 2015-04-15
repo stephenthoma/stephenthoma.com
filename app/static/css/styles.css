@@ -76,6 +76,9 @@ ul {
   padding-bottom: 20px;
   margin-top: -20px;
 }
+.header-content h1 {
+  margin-bottom: 0;
+}
 
 .header-blob p {
   margin-top: 13px;
@@ -107,14 +110,22 @@ ul {
 
 .flexbox .flex-card-list {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 .flexbox .flex-card-listitem {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
 }
 .flexbox .flex-card {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 .flexbox .flex-card-heading {
   font-weight: 700;
@@ -122,8 +133,12 @@ ul {
 }
 .flexbox .flex-card-content {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex: 1 0 auto; /* Basis for IE10/11 */
+  -webkit-flex: 1 0 auto;
   flex-direction: column;
+  -webkit-flex-direction: column;
 }
 .flexbox .flex-card-image img {
   width: 100%;
@@ -171,6 +186,9 @@ ul {
   }
   .header-nav a {
     padding: 10px;
+  }
+  .flex-card-listitem {
+    padding-bottom: 15px;
   }
 }
 @media all and (min-width:40em) {
