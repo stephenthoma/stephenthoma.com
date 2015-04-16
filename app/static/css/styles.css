@@ -77,7 +77,7 @@ ul {
   margin-top: -20px;
 }
 .header-content h1 {
-  margin-bottom: 0;
+  margin-bottom: -15px;
 }
 
 .header-blob p {
@@ -140,9 +140,33 @@ ul {
   flex-direction: column;
   -webkit-flex-direction: column;
 }
-.flexbox .flex-card-image img {
-  width: 100%;
+.flexbox .flex-card-image a {
+  border-radius: 3px;
+  width: 295px; /* 4:3 ratio */
+  height: 221px;
+  display: table;
 }
+.flexbox .overlay{
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgba(119, 204, 164, 0);
+  color: #fff;
+  opacity: 0;
+  transition: all .3s ease;
+  display: table-cell;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.flexbox .overlay:hover {
+  background-color: rgba(119, 204, 164, 0.75);
+  opacity: 1;
+}
+
 .flexbox .flex-card-button {
   float: right;
 }

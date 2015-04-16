@@ -67,7 +67,9 @@
                 <li class="flex-card-listitem">
                   <div class="flex-card">
                     <div class="flex-card-image">
-                      <img alt="A snapshot of the project" src="{{ project.image_url }}" />
+                      <a href="" style="background-image:url({{ project.image_url }});">
+                        <span class="overlay">{{ project.name }}</span>
+                      </a>
                     </div>
                     <div class="flex-card-content">
                       <p>
