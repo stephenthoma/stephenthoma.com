@@ -20,12 +20,14 @@ var muddle = (function() {
 
     var modal = $(element);
     $(modal).addClass("md-active");
+    $("body").addClass("md-active");
   };
 
   self.close = function() {
     var modal = $(".md-active");
     if (modal) {
       modal.removeClass("md-active");
+      $("body").removeClass("md-active");
     }
   };
 

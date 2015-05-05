@@ -248,6 +248,9 @@ ul {
   opacity: 1;
   visibility: visible;
 }
+body.md-active {
+  overflow: hidden;
+}
 
 .muddle-modal {
   visibility: hidden;
@@ -374,7 +377,8 @@ ul {
     padding-top: 0px;
   }
   .header-nav a {
-    padding: 10px;
+    padding: 0px;
+    font-size: x-small;
   }
   .flexbox {
     width: 100%;
@@ -388,7 +392,11 @@ ul {
   }
   .md-desc {
     margin-left: 0 !important;
-    height: 34% !important;
+    margin-bottom: 50px !important;
+    height: auto !important;
+  }
+  .md-desc .md-link {
+    bottom: -40px;
   }
 }
 @media all and (min-width:40em) {
