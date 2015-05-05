@@ -1,5 +1,5 @@
 import json, os
-from flask import Flask, render_template
+from flask import Flask, render_template, make_response
 app = Flask(__name__)
 
 
@@ -16,6 +16,15 @@ def read_projects(data_path):
 def index():
     projects = read_projects('/var/www/stephenthoma.com/app/static/projects.json')
     return render_template('index.html', projects=projects)
+
+@app.route("/resume")
+def resume():
+        binary_pdf = open('/var/www/stephenthoma.com/app/static/resume.pdf').read()
+        response = make_response(binary_pdf)
+        response.headers['Content-Type'] = 'application/pdf'
+        response.headers['Content-Disposition'] = \
+            'inline; filename=%s.pdf' % 'resume'
+        return response
 
 if __name__ == "__main__":
     app.run()
