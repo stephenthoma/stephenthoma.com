@@ -1,5 +1,35 @@
 {
   "projects": [
+    { "id": "skratchlabs",
+      "name": "Skratch Labs blog",
+      "url": "http://skratchlabs.squarespace.com",
+      "image_url": "static/img/skratchlabs.jpg",
+      "description": "Created a custom squarespace template to be used by Skratch Labs for their new blogging platform."
+    },
+    { "id": "musicaltiles",
+      "name": "Musical tiles",
+      "url": "http://www.instructables.com/id/Musical-tiles/",
+      "image_url": "static/img/musicaltiles.jpg",
+      "description": "Created a table that generates music based on the positioning of tiles placed on it. Reactivision fiducial codes were used to identify where tiles had been placed. This information was then a Max MSP step sequencer to generate harmonies. This project has been featured twice on Instructables.com."
+    },
+    { "id": "whitebark",
+      "name": "Whitebark pine",
+      "url": "http://www.stephenthoma.com/whitebarkpine",
+      "image_url": "static/img/whitebarkpine.jpg",
+      "description": "Worked with a National Park scientist using GIS and micro-meteorological weather data to identify the most suitable habitat for reestablishing white pine stands."
+    },
+    { "id": "cameragoat",
+      "name": "Camera Goat site",
+      "url": "http://www.cameragoat.com",
+      "image_url": "static/img/cameragoat.jpg",
+      "description": "Redesigned the web presence of the Camera Goat mobile camera dolly."
+    },
+    { "id": "node-tradedesk",
+      "name": "Node Tradedesk module",
+      "url": "https://github.com/HumanDesign/node-tradedesk",
+      "image_url": "static/img/code.jpg",
+      "description": "A node.js module for interacting with The Trade Desk's API"
+    },
     {
       "id": "airworx",
       "name": "Airworx Cinema",
