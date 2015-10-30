@@ -19,12 +19,21 @@ def index():
 
 @app.route("/resume")
 def resume():
-        binary_pdf = open('/var/www/stephenthoma.com/app/static/resume.pdf').read()
-        response = make_response(binary_pdf)
-        response.headers['Content-Type'] = 'application/pdf'
-        response.headers['Content-Disposition'] = \
-            'inline; filename=%s.pdf' % 'resume'
-        return response
+    binary_pdf = open('/var/www/stephenthoma.com/app/static/resume.pdf').read()
+    response = make_response(binary_pdf)
+    response.headers['Content-Type'] = 'application/pdf'
+    response.headers['Content-Disposition'] = \
+        'inline; filename=%s.pdf' % 'resume'
+    return response
+
+@app.route("/whitebarkpine")
+def whitebarkpine():
+    binary_pdf = open('/var/www/stephenthoma.com/app/static/pinepaper.pdf').read()
+    response = make_response(binary_pdf)
+    response.headers['Content-Type'] = 'application/pdf'
+    response.headers['Content-Disposition'] = \
+        'inline; filename=%s.pdf' % 'pinepaper'
+    return response
 
 if __name__ == "__main__":
     app.run()
