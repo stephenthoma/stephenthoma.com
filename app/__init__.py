@@ -2,6 +2,7 @@ import json, os
 from flask import Flask, render_template, make_response
 app = Flask(__name__)
 
+BASE = '/var/www/stephenthoma.com/'
 
 def read_projects(data_path):
     """Load JSON project data from file"""
@@ -14,12 +15,12 @@ def read_projects(data_path):
 
 @app.route("/")
 def index():
-    projects = read_projects('/var/www/stephenthoma.com/app/static/projects.json')
+    projects = read_projects(BASE + 'app/static/projects.json')
     return render_template('index.html', projects=projects)
 
 @app.route("/resume")
 def resume():
-    binary_pdf = open('/var/www/stephenthoma.com/app/static/resume.pdf').read()
+    binary_pdf = open(BASE + 'app/static/resume.pdf').read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
     response.headers['Content-Disposition'] = \
@@ -28,7 +29,7 @@ def resume():
 
 @app.route("/whitebarkpine")
 def whitebarkpine():
-    binary_pdf = open('/var/www/stephenthoma.com/app/static/pinepaper.pdf').read()
+    binary_pdf = open(BASE + 'app/static/pinepaper.pdf').read()
     response = make_response(binary_pdf)
     response.headers['Content-Type'] = 'application/pdf'
     response.headers['Content-Disposition'] = \
