@@ -1,5 +1,11 @@
 {
   "projects": [
+    { "id": "lifeprompt",
+      "name": "Life Prompt",
+      "url": "http://github.com/sthoma/lifeprompt",
+      "image_url": "static/img/code.jpg",
+      "description": "I wanted to create something that allowed me to start keeping a diary with the smallest amount of friction possible. So I hacked together an interface-free app that uses Twilio and Google's Speech Recognition API to call the user daily and ask for a recap of their day. It then transcribes this audio into text for easy reference and analysis."
+    },
     { "id": "skratchlabs",
       "name": "Skratch Labs blog",
       "url": "http://skratchlabs.squarespace.com",
