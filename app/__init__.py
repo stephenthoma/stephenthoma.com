@@ -13,6 +13,14 @@ def read_projects(data_path):
     else:
         return {}
 
+def respond_pdf(filename):
+    binary_pdf = open('{0}app/static/{1}.pdf'.format(BASE, filename)).read()
+    response = make_response(binary_pdf)
+    response.headers['Content-Type'] = 'application/pdf'
+    response.headers['Content-Disposition'] = \
+        'inline; filename={0}.pdf'.format(filename)
+    return response
+
 @app.route("/")
 def index():
     projects = read_projects(BASE + 'app/static/projects.json')
@@ -20,21 +28,11 @@ def index():
 
 @app.route("/resume")
 def resume():
-    binary_pdf = open(BASE + 'app/static/resume.pdf').read()
-    response = make_response(binary_pdf)
-    response.headers['Content-Type'] = 'application/pdf'
-    response.headers['Content-Disposition'] = \
-        'inline; filename=%s.pdf' % 'resume'
-    return response
+    return respond_pdf('resume')
 
 @app.route("/whitebarkpine")
 def whitebarkpine():
-    binary_pdf = open(BASE + 'app/static/pinepaper.pdf').read()
-    response = make_response(binary_pdf)
-    response.headers['Content-Type'] = 'application/pdf'
-    response.headers['Content-Disposition'] = \
-        'inline; filename=%s.pdf' % 'pinepaper'
-    return response
+    return respond_pdf('pinepaper')
 
 if __name__ == "__main__":
     app.run()
