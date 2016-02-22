@@ -1,3 +1,7 @@
+app/static/css/*
+app/templates
+node_modules/
+package.json
 venv
 img
 keybase.txt
