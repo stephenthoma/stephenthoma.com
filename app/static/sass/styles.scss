@@ -263,10 +263,6 @@ p {
   visibility: visible;
 }
 
-body.md-active {
-  overflow: hidden;
-}
-
 .muddle-overlay {
   visibility: hidden;
   position: fixed;
@@ -283,14 +279,14 @@ body.md-active {
 }
 
 .muddle-modal {
+  overflow-x: hidden;
   visibility: hidden;
   z-index: 2000;
   position: fixed;
-  overflow: auto;
   top:50%;
   left:50%;
   width: 60%;
-  max-height: 60%;
+  max-height: 70%;
 
   border-radius: 2px;
   border-bottom: 0 none;
@@ -348,29 +344,16 @@ body.md-active {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-
-  .title {
-    color: rgba(64, 64, 63, 1);
-    vertical-align: middle;
-    text-align: center;
-    margin: 0;
-    padding-bottom: 2px;
-  }
-  .tagline {
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-    display: block;
-    margin: 10px auto 10px auto;
-  }
 }
 
 .md-body {
-  padding-left: 25px;
-  padding-top: 25px;
-  margin-left: 5%;
-  padding-right: 7%;
-  width: 94%;
+  padding: 20px;
+  background-color: $gray-lightest;
+
+  > * {
+    width: 90%;
+    margin: 0 auto;
+  }
 
   .md-tags ul {
     margin: 0;
@@ -378,7 +361,7 @@ body.md-active {
     margin-bottom: 10px;
 
     li {
-      display: inline;
+      display: inline-block;
       text-transform: uppercase;
       font-weight: 200;
       font-size: 12px;
@@ -388,16 +371,19 @@ body.md-active {
   }
 
   .md-desc {
-    width: 90%;
-    padding-bottom: 30px;
+    overflow: hidden;
     p {
       margin: 0;
+    }
+
+    .button {
+      margin-top: 20px;
     }
   }
 
   .md-link {
     float: right;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 }
 
@@ -409,6 +395,7 @@ body.md-active {
   cursor: pointer;
   font-style: normal;
   font-weight: 200;
+  transition: all .2s;
 
   &:hover {
     color: $gray-lightest;
