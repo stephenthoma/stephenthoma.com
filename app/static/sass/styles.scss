@@ -405,7 +405,10 @@ p {
 
 /* ---- SECTION: FOOTER ---- */
 .story-foot {
-  height: 40px;
+  overflow: auto;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 
   a {
     float: right;
