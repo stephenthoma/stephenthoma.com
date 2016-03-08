@@ -24,6 +24,10 @@ html(lang="en")
               a(id="link-{{project.id}}" style="background-image:url({{project.image_url}});")
                 span.overlay(id="ov-{{project.id}}") {{project.name}}
         | {% endfor %}
+        // Empty li equal to num cells per row to fill possible partially empty end row
+        li
+        li
+        li
     div.story-foot
        a(href="https://github.com/sthoma/stephenthoma.com") Check out this site's source on my Github!
 

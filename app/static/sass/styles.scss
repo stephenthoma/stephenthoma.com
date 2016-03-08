@@ -192,6 +192,11 @@ p {
       display: -webkit-flex;
       display: -ms-flexbox;
       padding: 5px;
+
+      &:empty {
+        width: 295px;
+        height: 0;
+      }
     }
 
     .flex-card {
