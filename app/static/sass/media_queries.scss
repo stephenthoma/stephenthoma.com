@@ -1,6 +1,15 @@
+$primary: rgba(79, 212, 168, 0.98);
+
 @media screen and (max-width: 614px) {
   body {
+
+    overflow-x:hidden;
     bottom: 1px !important;
+
+    .md-active {
+      overflow: visible;
+      position: fixed;
+    }
 
     .cl-effect-1 a::before {
       margin-right: 3px;
@@ -38,9 +47,9 @@
     .story {
       margin-top: 100px;
 
-      .overlay {
+      .overylay {
         opacity: 1;
-        background-color: rgba(235,141,54, 0.55);
+        background-color: transparentize($primary, 0.3);
       }
     }
 
