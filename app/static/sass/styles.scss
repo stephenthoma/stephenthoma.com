@@ -1,15 +1,28 @@
+$primary: rgba(79, 212, 168, 0.98);
+$primary-light: lighten($primary, 15%);
+$primary-lighter: lighten($primary, 30%);
+$primary-dark: darken($primary, 15%);
+$primary-darker: darken($primary, 30%);
+
+$gray: lighten(#000, 10%);
+$gray-light: lighten($gray, 30%);
+$gray-lighter: lighten($gray, 60%);
+$gray-lightest: lighten($gray, 85%);
+$white: #fff;
+
+
 body {
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
   bottom: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #555;
+  color: $gray-lighter;
 
   &:hover {
-    color: #111;
+    color: $gray-light;
   }
 }
 
@@ -27,7 +40,7 @@ p {
 .button {
   border: 0 none;
   border-radius: 2px;
-  color: #fff;
+  color: $white;
   cursor: pointer;
   display: inline-block;
   font-size: 13px;
@@ -46,11 +59,12 @@ p {
     outline: none;
   }
   &.blue {
-    background-color: rgba(79, 212, 168, 0.98);
-    color: #fff;
+    background-color: $primary;
+    color: $gray-lightest;
 
     &:hover {
-      background-color: rgba(28, 161, 117, 1);
+      background-color: $primary-dark;
+      color: $white;
     }
   }
 }
@@ -64,10 +78,10 @@ p {
   z-index: 50;
   overflow: hidden;
 
-  background-color: rgba(79, 212, 168, 0.98);
-  color: #f6f6f6;
+  background-color: $primary;
+  color: $gray-lightest;
 
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 5px transparentize($gray, 0.35);
 
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -75,7 +89,10 @@ p {
   transition: all 0.5s;
 
   a {
-    color: #f6f6f6;
+    color: $gray-lightest;
+    &:hover {
+      color: $white;
+    }
   }
 }
 
@@ -119,7 +136,7 @@ p {
     img {
       -moz-border-radius: 50%;
       border-radius: 50%;
-      margin-top: 28%;
+      margin-top: 22%;
       width: 90%;
     }
   }
@@ -186,6 +203,7 @@ p {
     justify-content: center;
     padding-top: 15px;
     -webkit-padding-start: 0;
+    -webkit-margin-after: 0;
 
     li {
       display: flex;
@@ -214,7 +232,7 @@ p {
       display: table;
 
       .overlay:hover {
-        background-color: rgba(235,141,54, 0.75);
+        background-color: transparentize($primary, 0.3);
         opacity: 1;
       }
     }
@@ -228,9 +246,8 @@ p {
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
-  background-color: rgba(119, 204, 164, 0);
   border-radius: 3px;
-  color: #fff;
+  color: $gray-lightest;
   opacity: 0;
   transition: all .3s ease;
   display: table-cell;
@@ -259,7 +276,7 @@ body.md-active {
   height: 100%;
   z-index: 1000;
   opacity: 0;
-  background-color: rgba(235,141,54, 0.5);
+  background-color: transparentize($primary-lighter, 0.5);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -275,11 +292,10 @@ body.md-active {
   width: 60%;
   max-height: 60%;
 
-  background-color: rgba(248, 248, 248, 1);
   border-radius: 2px;
   border-bottom: 0 none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid transparentize($gray, .98);
+  box-shadow: 0 1px 5px transparentize($gray, .95);
 
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -318,14 +334,13 @@ body.md-active {
 .md-header {
   width: 100%;
   display: table;
-  background-color: #fff;
-  border-bottom: 1px solid rgba(235, 235, 235, 1);
+  border-bottom: 1px solid $gray-lighter;
   background-size: 1000px;
   height: 300px;
 
   .overlay {
     opacity: 1;
-    background-color: rgba(0,0,0, 0.45);
+    background-color: transparentize($gray-light, .5);
     font-size: 45px;
     cursor: initial;
     border-radius: 2px;
@@ -388,7 +403,7 @@ body.md-active {
 
 .md-close {
   position: absolute;
-  color: #ddd;
+  color: $gray-light;
   top: 3px;
   right: 20px;
   cursor: pointer;
@@ -396,7 +411,7 @@ body.md-active {
   font-weight: 200;
 
   &:hover {
-    color: #999;
+    color: $gray-lightest;
     font-weight: 400;
   }
 }
@@ -407,8 +422,8 @@ body.md-active {
 
   a {
     float: right;
-    width: 38%;
-    color: #555;
+    text-align: right;
+    color: $gray-light;
     font-size: 14px;
   }
 }
