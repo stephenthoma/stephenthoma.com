@@ -24,7 +24,7 @@
     { "id": "skratchlabs",
       "name": "Skratch Labs blog",
       "url": "http://skratchlabs.squarespace.com",
-      "image_url": "static/img/skratchlabs.jpg",
+      "image_url": "static/img/skratchlabs.png",
       "description": "Created a custom squarespace template to be used by Skratch Labs for their new blogging platform.",
       "tags": ["HTML", "CSS", "Javascript", "Design"]
     },
@@ -49,6 +49,13 @@
       "description": "Redesigned the web presence of the Camera Goat mobile camera dolly.",
       "tags": ["HTML", "CSS", "Javascript", "Design"]
     },
+    { "id": "hccpd-vis",
+      "name": "HCD Visualisation",
+      "url": "https://github.com/sthoma/hccpd-vis",
+      "image_url": "static/img/hccpd-vis.png",
+      "description": "I've taken an amazing class called Human Centered Computing and Professional Development three times now (by choice!). Everyone who takes the class fills out a form every week about what they've been doing. I wanted a way to give back to the class, so I  created a Python script that scrapes the last 5 years of entries from the class website. Then, I used D3.js to create visualisations based on the data I obtained.",
+      "tags": ["Python", "Javascript", "D3.js"]
+    },
     { "id": "node-tradedesk",
       "name": "Node Tradedesk module",
       "url": "https://github.com/HumanDesign/node-tradedesk",
@@ -71,6 +78,14 @@
       "image_url": "static/img/lt11tv.jpg",
       "description": "A website that aggregates Louder Than 11 live broadcasts into one easily navigable resource including live scoring of events.",
       "tags": ["HTML", "CSS", "Javascript", "PHP", "Design"]
+    },
+    {
+      "id": "stephenthoma",
+      "name": "This Site",
+      "url": "http://www.github.com/sthoma/stephenthoma.com",
+      "image_url": "static/img/stephenthoma.png",
+      "description": "This site has been through a lot of iterations (with more to come!). I wanted a way to share all of the projects I've worked on with the world. I've built out the site around 5 times iterating towards a design and implementation that I like. Everything on the site -- from the modals, to the header -- was coded from the ground up by me. In the future I'll be adding a dedicated page for my photography and a blog.",
+      "tags": ["Jade", "SASS", "Javascript", "Python", "Flask", "Design"]
     },
     {
       "id": "deepwater",
