@@ -8,6 +8,7 @@ var header_resize = function() {
 
     $('.story').waypoint( function( direction ) {
       if( direction === 'down' && animClassDown ) {
+        mixpanel.track("Scrolled");
         $head.attr('class', 'header ' + animClassDown);
       }
       else if( direction === 'up' && animClassUp ){

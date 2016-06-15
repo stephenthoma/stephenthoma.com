@@ -21,6 +21,8 @@ var muddle = (function() {
     var modal = $(element);
     $(modal).addClass("md-active");
     $("body").addClass("md-active");
+
+    mixpanel.track("Modal opened", {"Modal": modal[0].id })
   };
 
   self.close = function() {

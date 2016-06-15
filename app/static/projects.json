@@ -10,21 +10,21 @@
     { "id": "tandem",
       "name": "Tandem",
       "url": "http://www.betandem.com",
-      "image_url": "static/img/tandem.png",
+      "image_url": "static/img/tandem.jpg",
       "description": "For extremely busy people that want to schedule in-person group meetings, we provide a service that considers everyone’s schedules and determines the best time to meet before the first email is sent.",
       "tags": ["Jade", "CoffeeScript", "SASS", "Node.js", "Express", "Angular"]
     },
     { "id": "shiftscheduler",
       "name": "Shift Scheduler",
       "url": "",
-      "image_url": "static/img/shiftscheduler.png",
+      "image_url": "static/img/shiftscheduler.jpg",
       "description": "This was a class project that required my group to create an application using object oriented design practices. We chose to build a scheduling application. In this project I identified project requirements, created user tasks, and class diagrams. I also worked on application development using Android Studio.",
       "tags": ["Java", "Android", "Design", "Object Oriented Design"]
     },
     { "id": "skratchlabs",
       "name": "Skratch Labs blog",
       "url": "http://skratchlabs.squarespace.com",
-      "image_url": "static/img/skratchlabs.png",
+      "image_url": "static/img/skratchlabs.jpg",
       "description": "Created a custom squarespace template to be used by Skratch Labs for their new blogging platform.",
       "tags": ["HTML", "CSS", "Javascript", "Design"]
     },
@@ -52,7 +52,7 @@
     { "id": "hccpd-vis",
       "name": "HCD Visualisation",
       "url": "https://github.com/sthoma/hccpd-vis",
-      "image_url": "static/img/hccpd-vis.png",
+      "image_url": "static/img/hccpd-vis.jpg",
       "description": "I've taken an amazing class called Human Centered Computing and Professional Development three times now (by choice!). Everyone who takes the class fills out a form every week about what they've been doing. I wanted a way to give back to the class, so I  created a Python script that scrapes the last 5 years of entries from the class website. Then, I used D3.js to create visualisations based on the data I obtained.",
       "tags": ["Python", "Javascript", "D3.js"]
     },
@@ -83,7 +83,7 @@
       "id": "stephenthoma",
       "name": "This Site",
       "url": "http://www.github.com/sthoma/stephenthoma.com",
-      "image_url": "static/img/stephenthoma.png",
+      "image_url": "static/img/stephenthoma.jpg",
       "description": "This site has been through a lot of iterations (with more to come!). I wanted a way to share all of the projects I've worked on with the world. I've built out the site around 5 times iterating towards a design and implementation that I like. Everything on the site -- from the modals, to the header -- was coded from the ground up by me. In the future I'll be adding a dedicated page for my photography and a blog.",
       "tags": ["Jade", "SASS", "Javascript", "Python", "Flask", "Design"]
     },

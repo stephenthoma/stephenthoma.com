@@ -11,10 +11,10 @@ html(lang="en")
           h2 Stephen Thoma
         div.header-nav.cl-effect-1
           ul
-            li: a(href="https://www.instagram.com/stephenthoma") Photo
-            li: a(href="https://www.github.com/sthoma") Github
-            li: a(href="https://www.stephenthoma.com/resume") Resume
-            li: a(href="mailto:stephen@stephenthoma.com") Contact
+            li: a#photo(href="https://www.instagram.com/stephenthoma").mixpanel-tracked Photo
+            li: a#github(href="https://www.github.com/sthoma").mixpanel-tracked Github
+            li: a#resume(href="https://www.stephenthoma.com/resume").mixpanel-tracked Resume
+            li: a#contact(href="mailto:stephen@stephenthoma.com").mixpanel-tracked Contact
     div.story
       ul.flex-card-list
         | {% for project in projects %}
@@ -46,7 +46,7 @@ html(lang="en")
           div.md-desc
             p {{project.description}}
             | {% if project.url|length != 0 %}
-            a.md-link(href="{{project.url}}" target="_blank")
+            a.md-link.mixpanel-tracked(id="{{project.id}}" href="{{project.url}}" target="_blank")
               button.button.blue More
             | {% else %}
             | {% endif %}
