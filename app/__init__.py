@@ -3,13 +3,12 @@ from flask import Flask, render_template, make_response
 app = Flask(__name__)
 
 BASE = '/var/www/stephenthoma.com/'
-
-def read_projects(data_path):
+def read_data(data_path, key):
     """Load JSON project data from file"""
     if os.path.isfile(data_path):
         with open(data_path) as data_file:
-            projects = json.load(data_file)
-        return projects['projects']
+            res = json.load(data_file)
+        return res[key]
     else:
         return {}
 
@@ -23,7 +22,7 @@ def respond_pdf(filename):
 
 @app.route("/")
 def index():
-    projects = read_projects(BASE + 'app/static/projects.json')
+    projects = read_data(BASE + 'app/static/projects.json', 'projects')
     return render_template('index.html', projects=projects)
 
 @app.route("/resume")
