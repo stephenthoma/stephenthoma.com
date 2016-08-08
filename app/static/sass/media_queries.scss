@@ -3,7 +3,7 @@ $primary: rgba(79, 212, 168, 0.98);
 @media screen and (max-width: 614px) {
   body {
 
-    overflow-x:hidden;
+    overflow-x: hidden;
     bottom: 1px !important;
 
     .md-active {
@@ -35,8 +35,8 @@ $primary: rgba(79, 212, 168, 0.98);
       }
 
       .header-nav {
-        margin-top: 5px;
         margin-left: initial;
+        align-self: initial;
 
         a {
           padding: 0;
@@ -47,7 +47,7 @@ $primary: rgba(79, 212, 168, 0.98);
     .story {
       margin-top: 100px;
 
-      .overylay {
+      .overlay {
         opacity: 1;
         background-color: transparentize($primary, 0.3);
       }
@@ -68,7 +68,7 @@ $primary: rgba(79, 212, 168, 0.98);
   }
 }
 
-@media screen and (min-width: 615px) and (max-width: 914px) {
+@media screen and (min-width: 615px) and (max-width: 955px) {
   body {
     bottom: 1px !important;
     .story {
@@ -93,9 +93,9 @@ $primary: rgba(79, 212, 168, 0.98);
   }
 }
 
-@media screen and (min-width: 915px) and (max-width: 1150px) {
+@media screen and (min-width: 956px) and (max-width: 1160px) {
   body {
-    botom: 1px !important;
+    bottom: 1px !important;
     .header-content {
       width: 90%;
     }

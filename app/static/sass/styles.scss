@@ -121,46 +121,54 @@ p {
   align-items: flex-start;
   margin: 0 auto;
   width: 74%;
+  height: 100%;
 
   #hello {
     order: 1;
     flex: 0 1 100%;
     align-self: auto;
+    position: absolute;
+    top: 8px;
+
+    h1 { margin: 0; }
   }
 
   #gravatar {
     order: 2;
     flex: 0 1 80px;
     align-self: auto;
+    padding-right: 30px;
 
     img {
+      position: absolute;
+      top: 50%;
+      margin-top: -40px; // half of height
+      height: 80px;
       -moz-border-radius: 50%;
       border-radius: 50%;
-      margin-top: 22%;
-      width: 90%;
     }
   }
 
   #bioname {
     order: 3;
     flex: 0 1 45%;
-    align-self: auto;
+    align-self: center;
 
     p {
       font-weight: 300;
+      margin: 0;
     }
 
     h2 {
       text-transform: uppercase;
-      margin: 1.8em 0;
+      margin: 0;
     }
   }
 
   .header-nav {
     order: 4;
     flex: 0 1 auto;
-    align-self: flex-start;
-    margin-top: 50px;
+    align-self: center;
     margin-left: auto;
 
     ul {
