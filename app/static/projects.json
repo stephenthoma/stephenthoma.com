@@ -1,8 +1,15 @@
 {
   "projects": [
+    { "id": "hnfavorites",
+      "name": "HN Favorites",
+      "url": "http://github.com/stephenthoma/hnfaves",
+      "image_url": "static/img/hnfaves.png",
+      "description": "The community on Hacker News is full of smart people. Interesting content is constantly being generated and posted to the site. Recently a feature was added that allows users to keep track of items they like by favoriting them. I created HN favorites to provide a global view of the best content on HN as viewed by its user.",
+      "tags": ["Node", "APIs", "Design"]
+    },
     { "id": "lifeprompt",
       "name": "Life Prompt",
-      "url": "http://github.com/sthoma/lifeprompt",
+      "url": "http://github.com/stephenthoma/lifeprompt",
       "image_url": "static/img/code.jpg",
       "description": "I wanted to create something that allowed me to start keeping a diary with the smallest amount of friction possible. So I hacked together an interface-free app that uses Twilio and Google's Speech Recognition API to call the user daily and ask for a recap of their day. It then transcribes this audio into text for easy reference and analysis.",
       "tags": ["Python", "APIs"]
@@ -51,7 +58,7 @@
     },
     { "id": "hccpd-vis",
       "name": "HCD Visualisation",
-      "url": "https://github.com/sthoma/hccpd-vis",
+      "url": "https://github.com/stephenthoma/hccpd-vis",
       "image_url": "static/img/hccpd-vis.jpg",
       "description": "I've taken an amazing class called Human Centered Computing and Professional Development three times now (by choice!). Everyone who takes the class fills out a form every week about what they've been doing. I wanted a way to give back to the class, so I  created a Python script that scrapes the last 5 years of entries from the class website. Then, I used D3.js to create visualisations based on the data I obtained.",
       "tags": ["Python", "Javascript", "D3.js"]
@@ -82,7 +89,7 @@
     {
       "id": "stephenthoma",
       "name": "This Site",
-      "url": "http://www.github.com/sthoma/stephenthoma.com",
+      "url": "http://www.github.com/stephenthoma/stephenthoma.com",
       "image_url": "static/img/stephenthoma.jpg",
       "description": "This site has been through a lot of iterations (with more to come!). I wanted a way to share all of the projects I've worked on with the world. I've built out the site around 5 times iterating towards a design and implementation that I like. Everything on the site -- from the modals, to the header -- was coded from the ground up by me. In the future I'll be adding a dedicated page for my photography and a blog.",
       "tags": ["Jade", "SASS", "Javascript", "Python", "Flask", "Design"]
@@ -115,7 +122,7 @@
     {
       "id": "doitlive",
       "name": "DoItLive",
-      "url": "https://github.com/sthoma/doitlive",
+      "url": "https://github.com/stephenthoma/doitlive",
       "image_url": "static/img/doitlive.jpg",
       "description": "A browser app intended to be run locally to interface with Dropbox API in an effort to allow users to easily store files on the Dropbox servers without having local copies.",
       "tags": ["HTML", "CSS", "Javascript", "Python"]
@@ -123,7 +130,7 @@
     {
       "id": "allocation",
       "name": "Dairy Calculator",
-      "url": "https://github.com/sthoma/dairyalloc",
+      "url": "https://github.com/stephenthoma/dairyalloc",
       "image_url": "static/img/dairyalloc.jpg",
       "description": "The dairy allocation calculator is a web app that will be used by dairy farmers to calculate their product level life cycle allocation (A metric for environmental impact). The work was completed for the University of Arkansas",
       "tags": ["HTML", "CSS", "Javascript", "Visual Basic"]
@@ -131,7 +138,7 @@
     {
       "id": "dijkstra",
       "name": "Dijkstra",
-      "url": "https://github.com/sthoma/dijkstra_cpp",
+      "url": "https://github.com/stephenthoma/dijkstra_cpp",
       "image_url": "static/img/graph.jpg",
       "description": "A C++ implementation of dijkstra's single source shortest pathfinding algorithm.",
       "tags": ["C++"]
