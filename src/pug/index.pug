@@ -32,18 +32,18 @@ html(lang="en")
     each project in projects
       div.muddle-modal.md-anim(id=`modal-${project.id}`)
         div.md-content
-        div.md-header(style=`background-image:url(${project.image_url})`)
-          span.overlay(id=`md-ov-${project.id}`) #{project.name}
-          i.md-close x
-        div.md-body
-          div.md-tags
-          ul
-            each tag in project.tags
-              li #{tag}
-          div.md-desc
-          p #{project.description}
-          if project.url.length !== 0
-            a.md-link.mixpanel-tracked(id=`${project.id}` href=`${project.url}` target="_blank")
-              button.button.blue More
+          div.md-header(style=`background-image:url(${project.image_url})`)
+            span.overlay(id=`md-ov-${project.id}`) #{project.name}
+            i.md-close x
+          div.md-body
+            div.md-tags
+              ul
+                each tag in project.tags
+                  li #{tag}
+            div.md-desc
+              p #{project.description}
+                if project.url.length !== 0
+                  a.md-link.mixpanel-tracked(id=`${project.id}` href=`${project.url}` target="_blank")
+                    button.button.blue More
     div.muddle-overlay
     include ./scripts.pug
