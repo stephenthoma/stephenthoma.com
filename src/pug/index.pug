@@ -3,47 +3,47 @@ html(lang="en")
   body
     div.header.header-large(data-animate-up="header-large" data-animate-down="header-small")
       div.header-content
-    div#hello: h1 Hello!
-    div#gravatar
-      img.gravatar(alt="Photo of me" src="https://www.gravatar.com/avatar/3e4b36dbab293b89d2a9d602791a7239?s=512")
-    div#bioname
-      p I'm a graduate of the University of Colorado: Boulder. I work at #[a(href="https://augur.io") Augur] in Denver, Co. Software engineer, photographer, and rock climber. I love making cool things for your browser!
-      h2 Stephen Thoma
-    div.header-nav.cl-effect-1
-      ul
-        li: a#photo(href="https://www.instagram.com/stephenthoma").mixpanel-tracked Photo
-        li: a#github(href="https://www.github.com/sthoma").mixpanel-tracked Github
-        li: a#resume(href="https://www.stephenthoma.com/resume").mixpanel-tracked Resume
-        li: a#contact(href="mailto:stephen@stephenthoma.com").mixpanel-tracked Contact
-  div.story
-    ul.flex-card-list
-    each project in projects
-      li
-        div.flex-card
-        div.flex-card-image
-          a(id=`link-${project.id}` style=`background-image:url(${project.image_url});`)
-          span.overlay(id=`ov-${project.id}`) #{project.name}
-    li
-    li
-    li
-  div.story-foot
-     a(href="https://github.com/sthoma/stephenthoma.com") Check out this site's source on my Github!
+        div#hello: h1 Hello!
+        div#gravatar
+          img.gravatar(alt="Photo of me" src="https://www.gravatar.com/avatar/3e4b36dbab293b89d2a9d602791a7239?s=512")
+        div#bioname
+          p I'm a graduate of the University of Colorado: Boulder. I work at #[a(href="https://augur.io") Augur] in Denver, Co. Software engineer, photographer, and rock climber. I love making cool things for your browser!
+          h2 Stephen Thoma
+        div.header-nav.cl-effect-1
+          ul
+            li: a#photo(href="https://www.instagram.com/stephenthoma").mixpanel-tracked Photo
+            li: a#github(href="https://www.github.com/sthoma").mixpanel-tracked Github
+            li: a#resume(href="https://www.stephenthoma.com/resume").mixpanel-tracked Resume
+            li: a#contact(href="mailto:stephen@stephenthoma.com").mixpanel-tracked Contact
+    div.story
+      ul.flex-card-list
+        each project in projects
+          li
+            div.flex-card
+              div.flex-card-image
+                a(id=`link-${project.id}` style=`background-image:url(${project.image_url});`)
+                  span.overlay(id=`ov-${project.id}`) #{project.name}
+        li
+        li
+        li
+    div.story-foot
+      a(href="https://github.com/sthoma/stephenthoma.com") Check out this site's source on my Github!
 
-  each project in projects
-    div.muddle-modal.md-anim(id=`modal-${project.id}`)
-      div.md-content
-      div.md-header(style=`background-image:url(${project.image_url})`)
-        span.overlay(id=`md-ov-${project.id}`) #{project.name}
-        i.md-close x
-      div.md-body
-        div.md-tags
-        ul
-          each tag in project.tags
-            li #{tag}
-        div.md-desc
-        p #{project.description}
-        if project.url.length !== 0
-          a.md-link.mixpanel-tracked(id=`${project.id}` href=`${project.url}` target="_blank")
-            button.button.blue More
-  div.muddle-overlay
-  include ./scripts.pug
+    each project in projects
+      div.muddle-modal.md-anim(id=`modal-${project.id}`)
+        div.md-content
+        div.md-header(style=`background-image:url(${project.image_url})`)
+          span.overlay(id=`md-ov-${project.id}`) #{project.name}
+          i.md-close x
+        div.md-body
+          div.md-tags
+          ul
+            each tag in project.tags
+              li #{tag}
+          div.md-desc
+          p #{project.description}
+          if project.url.length !== 0
+            a.md-link.mixpanel-tracked(id=`${project.id}` href=`${project.url}` target="_blank")
+              button.button.blue More
+    div.muddle-overlay
+    include ./scripts.pug
