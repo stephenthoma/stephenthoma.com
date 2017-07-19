@@ -1,0 +1,26 @@
+{
+  "name": "stephenthoma.com",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node ./scripts/sass.js ./src/sass/ ./dist/css/",
+    "pug": "node ./scripts/pug.js ./src/pug/index.pug ./src/projects.json ./dist/html/index.html",
+    "dev:js": "mkdir -p ./dist/js && cp -r ./src/js/* ./dist/js",
+    "dev:build": "npm run sass & npm run pug & npm run dev:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenthoma/stephenthoma.com.git"
+  },
+  "author": "Stephen Thoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenthoma/stephenthoma.com/issues"
+  },
+  "homepage": "https://github.com/stephenthoma/stephenthoma.com#readme",
+  "dependencies": {
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.0-rc.2"
+  }
+}
