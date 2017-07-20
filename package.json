@@ -7,7 +7,8 @@
     "sass": "node ./scripts/sass.js ./src/sass/ ./dist/css/",
     "pug": "node ./scripts/pug.js ./src/pug/index.pug ./src/projects.json ./dist/html/index.html",
     "dev:js": "mkdir -p ./dist/js && cp -r ./src/js/* ./dist/js",
-    "dev:build": "npm run sass & npm run pug & npm run dev:js"
+    "dev:build": "npm run sass & npm run pug & npm run dev:js",
+    "dev": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/stephenthoma/stephenthoma.com#readme",
   "dependencies": {
     "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
     "pug": "^2.0.0-rc.2"
   }
 }

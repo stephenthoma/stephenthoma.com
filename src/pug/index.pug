@@ -21,7 +21,7 @@ html(lang="en")
           li
             div.flex-card
               div.flex-card-image
-                a(id=`link-${project.id}` style=`background-image:url(${project.image_url});`)
+                a(id=`link-${project.id}` style=`background-image:url(https://storage.googleapis.com/site-stephenthoma/img/${project.image_url});`)
                   span.overlay(id=`ov-${project.id}`) #{project.name}
         li
         li
@@ -32,7 +32,7 @@ html(lang="en")
     each project in projects
       div.muddle-modal.md-anim(id=`modal-${project.id}`)
         div.md-content
-          div.md-header(style=`background-image:url(${project.image_url})`)
+          div.md-header(style=`background-image:url(https://storage.googleapis.com/site-stephenthoma/img/${project.image_url})`)
             span.overlay(id=`md-ov-${project.id}`) #{project.name}
             i.md-close x
           div.md-body
