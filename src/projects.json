@@ -44,7 +44,7 @@
     },
     { "id": "whitebark",
       "name": "Whitebark pine",
-      "url": "http://www.stephenthoma.com/whitebarkpine",
+      "url": "https://storage.googleapis.com/site-stephenthoma/pinepaper.pdf",
       "image_url": "whitebarkpine.jpg",
       "description": "Worked with a National Park scientist using GIS and micro-meteorological weather data to identify the most suitable habitat for reestablishing white pine stands.",
       "tags": ["R", "Grass", "QGIS"]
