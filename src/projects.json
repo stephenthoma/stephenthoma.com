@@ -2,9 +2,9 @@
   "projects": [
     { "id": "hnfavorites",
       "name": "HN Favorites",
-      "url": "http://github.com/stephenthoma/hnfaves",
+      "url": "http://www.hnfavorites.com",
       "image_url": "hnfaves.png",
-      "description": "The community on Hacker News is full of smart people. Interesting content is constantly being generated and posted to the site. Recently a feature was added that allows users to keep track of items they like by favoriting them. I created HN favorites to provide a global view of the best content on HN as viewed by its user.",
+      "description": "The community on Hacker News is full of smart people. Interesting content is constantly being generated and posted to the site. Recently a feature was added that allows users to keep track of items they like by favoriting them. I created HN favorites to provide a global view of the best content on HN as viewed by its user. Featured on the front page of Hacker News.",
       "tags": ["Node", "APIs", "Design"]
     },
     { "id": "lifeprompt",
@@ -18,7 +18,7 @@
       "name": "Tandem",
       "url": "http://www.betandem.com",
       "image_url": "tandem.jpg",
-      "description": "For extremely busy people that want to schedule in-person group meetings, we provide a service that considers everyone’s schedules and determines the best time to meet before the first email is sent.",
+      "description": "For extremely busy people that want to schedule in-person group meetings, Tandem provides a service that considers everyone’s schedules and determines the best time to meet before the first email is sent.",
       "tags": ["Jade", "CoffeeScript", "SASS", "Node.js", "Express", "Angular"]
     },
     { "id": "shiftscheduler",

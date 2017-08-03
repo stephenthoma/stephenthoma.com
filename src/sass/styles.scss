@@ -1,5 +1,7 @@
-$primary: rgba(79, 212, 168, 0.98);
-$primary-light: lighten($primary, 15%);
+//$primary: #1DA1F2;
+$primary: #209CEF;
+//$primary-light: lighten($primary, 15%);
+$primary-light: #76C6F7;
 $primary-lighter: lighten($primary, 30%);
 $primary-dark: darken($primary, 15%);
 $primary-darker: darken($primary, 30%);
@@ -78,7 +80,8 @@ p {
   z-index: 50;
   overflow: hidden;
 
-  background-color: $primary;
+  //background-color: $primary;
+  background: linear-gradient(45deg, $primary, $primary-light);
   color: $gray-lightest;
 
   box-shadow: 0 1px 5px transparentize($gray, 0.35);
@@ -122,16 +125,6 @@ p {
   margin: 0 auto;
   width: 74%;
   height: 100%;
-
-  #hello {
-    order: 1;
-    flex: 0 1 100%;
-    align-self: auto;
-    position: absolute;
-    top: 8px;
-
-    h1 { margin: 0; }
-  }
 
   #gravatar {
     order: 2;
