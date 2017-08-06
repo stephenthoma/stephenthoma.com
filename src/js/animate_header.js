@@ -1,27 +1,48 @@
-var header_resize = function() {
-  var $head = $('.header');
-  animClassDown = $head.data('animateDown');
-  animClassUp = $head.data('animateUp' );
-  if( $('body').css('bottom') == '0px') {
+var waypoint;
+var largeHeaderClass = 'header-large';
+var header = document.getElementsByClassName('header')[0];
+var story = document.getElementsByClassName('story')[0];
+function resizeHeader() {
+    if (window.getComputedStyle(story)['margin-top'] !== '100px') { // Check not mobile
+        if (document.body.scrollTop < 100) {
+            // Resize when at top of page from small to large must
+            header.classList.add(largeHeaderClass); // make large w/o scroll trigger
+        }
 
-    $head.attr('class', 'header ' + animClassUp);
+        if ( waypoint === undefined ) {
+            waypoint = new Waypoint({
+                element: story,
+                handler: resizeByDirection,
+                offset: '10%'
+            });
+        } else {
+            waypoint.enable();
+        }
+    } else { // Mobile
+        header.classList.remove(largeHeaderClass);
+        waypoint && waypoint.disable();
+    }
+}
 
-    $('.story').waypoint( function( direction ) {
-      if( direction === 'down' && animClassDown ) {
-        mixpanel.track("Scrolled");
-        $head.attr('class', 'header ' + animClassDown);
-      }
-      else if( direction === 'up' && animClassUp ){
-        $head.attr('class', 'header ' + animClassUp);
-      }
-    }, { offset: '10%' });
-  }
-  else {
-    $head.attr('class', 'header ' + animClassDown);
-    $('.story').waypoint('destroy');
-  }
-};
+function resizeByDirection(direction) {
+    if (direction === 'down') {
+        header.classList.remove(largeHeaderClass);
+    } else if (direction === 'up') {
+        header.classList.add(largeHeaderClass);
+    }
+}
 
-$(document).ready(function() { header_resize(); });
-$(window).resize(function() { header_resize(); });
+document.addEventListener('DOMContentLoaded', resizeHeader);
+(function() {
+    window.addEventListener("resize", resizeThrottler, false);
 
+    var resizeTimeout;
+    function resizeThrottler() {
+        if (!resizeTimeout) {
+            resizeTimeout = setTimeout(function() {
+                resizeTimeout = null;
+                resizeHeader();
+            }, 66);
+        }
+    }
+}());
