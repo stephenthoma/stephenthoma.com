@@ -8,6 +8,7 @@
     "pug": "node ./scripts/pug.js ./src/pug/index.pug ./src/projects.json ./dist/html/index.html",
     "dev:js": "mkdir -p ./dist/js && cp -r ./src/js/* ./dist/js",
     "dev:build": "npm run sass & npm run pug & npm run dev:js",
+    "deploy": "sh ./scripts/deploy.sh",
     "dev": "node index.js"
   },
   "repository": {
