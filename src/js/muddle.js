@@ -1,37 +1,35 @@
 function add_trigger(trigger_id, modal_id) {
-  $("#" + trigger_id).on("click", function() {
-      muddle.open($("#" + modal_id));
-  });
+    document.getElementById(trigger_id).addEventListener('click', function() {
+        muddle.open(modal_id);
+    });
 }
 
 var muddle = (function() {
-  var self = {};
+    var self = {};
 
-  $(".muddle-overlay").on("click", function() {
-    self.close();
-  });
+    window.addEventListener('load', function() {
+        for ( var elementClass of ['muddle-overlay', 'md-close'] ) {
+            document.getElementsByClassName(elementClass)[0].onclick = function() {
+                self.close();
+            };
+        };
+    });
 
-  $(".md-close").on("click", function() {
-    self.close();
-  });
+    self.open = function(modal_id) {
+        muddle.close();
 
-  self.open = function(element) {
-    muddle.close();
+        var modal = document.getElementById(modal_id);
+        modal.classList.add('md-active');
+        document.body.classList.add('md-active');
+    };
 
-    var modal = $(element);
-    $(modal).addClass("md-active");
-    $("body").addClass("md-active");
+    self.close = function() {
+        var modal = document.getElementsByClassName('md-active')[1];
+        if (modal !== undefined) {
+            modal.classList.remove('md-active');
+            document.body.classList.remove('md-active');
+        }
+    };
 
-    mixpanel.track("Modal opened", {"Modal": modal[0].id })
-  };
-
-  self.close = function() {
-    var modal = $(".md-active");
-    if (modal) {
-      modal.removeClass("md-active");
-      $("body").removeClass("md-active");
-    }
-  };
-
-  return self;
+    return self;
 }());
