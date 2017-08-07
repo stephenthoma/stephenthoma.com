@@ -33,3 +33,7 @@ var muddle = (function() {
 
     return self;
 }());
+
+for ( var project of projects ) {
+    add_trigger('ov-' + project.id, 'modal-'+ project.id);
+}
