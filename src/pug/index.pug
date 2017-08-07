@@ -42,7 +42,7 @@ html(lang="en")
             div.md-desc
               p #{project.description}
                 if project.url.length !== 0
-                  a.md-link.mixpanel-tracked(id=`${project.id}` href=`${project.url}` target="_blank")
+                  a.md-link.mixpanel-tracked(id=`${project.id}` href=`${project.url}` target="_blank" rel="noopener")
                     button.button.blue More
     div.muddle-overlay
     include ./scripts.pug
